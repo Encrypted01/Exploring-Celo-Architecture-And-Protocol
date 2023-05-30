@@ -1,0 +1,5 @@
+const CeloWallet = require('celo-sdk').CeloWallet;
+
+const wallet = CeloWallet.create();
+console.log('Wallet address:', wallet.address);
+console.log('Wallet private key:', wallet.privateKey);
