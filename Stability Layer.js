@@ -1,0 +1,3 @@
+contract CUSD {
+// Contract implementation
+}
