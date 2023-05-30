@@ -1,0 +1,5 @@
+const celoSDK = require('celo-sdk');
+
+const walletAddress = '0xyourWalletAddress';
+const balance = celoSDK.balanceOf(walletAddress);
+console.log('Wallet balance:', balance);
