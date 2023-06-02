@@ -1,7 +1,16 @@
 const celoSDK = require('celo-sdk');
-const walletAddress = '0xyourWalletAddress';
+
+// Wallet address to check the balance
+const walletAddress = '0xYourWalletAddress';
+
+// Create a Celo instance
+const celo = new celoSDK.Celo();
 
 // Get wallet balance
-const balance = celoSDK.balanceOf(walletAddress);
+celo.balanceOf(walletAddress)
+.then(balance => {
 console.log('Wallet balance:', balance);
-
+})
+.catch(error => {
+console.error('Error:', error);
+});
